@@ -8,14 +8,16 @@ public class CatTest {
 
     @Test
     public void checkCatIsAwake() {
+        //arrange
         Cat domesticCat = new DomesticCat();
+        //act and assert
         assertFalse("Cat should be awake by default", domesticCat.isAsleep());
     }
 
     @Test
     public void checkCatCanGoToSleep() {
         Cat domesticCat = new DomesticCat();
-        domesticCat.goToSleep();
+        domesticCat.isAsleep();
         assertTrue("Cat should be snoozing", domesticCat.isAsleep());
     }
 
