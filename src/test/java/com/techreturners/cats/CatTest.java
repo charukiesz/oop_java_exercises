@@ -16,19 +16,25 @@ public class CatTest {
 
     @Test
     public void checkCatCanGoToSleep() {
+        //arrange
         Cat domesticCat = new DomesticCat();
+        //further arrange
         domesticCat.isAsleep();
+        //act
         assertTrue("Cat should be snoozing", domesticCat.isAsleep());
     }
-/*
+
     @Test
-    public void checkCatCanWakep() {
+    public void checkCatCanWakeUp() {
+        //arrange
         Cat domesticCat = new DomesticCat();
+        //further arrange
         domesticCat.goToSleep();
         domesticCat.wakeUp();
+        //act
         assertFalse("Cat should be awake now", domesticCat.isAsleep());
     }
-
+/*
     @Test
     public void checkCatSetting() {
         Cat domesticCat = new DomesticCat();

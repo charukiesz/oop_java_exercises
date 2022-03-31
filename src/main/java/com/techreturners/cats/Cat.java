@@ -4,5 +4,9 @@ interface Cat {
 
 public boolean isAsleep();
 
+ public boolean goToSleep();
+
+ public boolean wakeUp();
+
 
 }
