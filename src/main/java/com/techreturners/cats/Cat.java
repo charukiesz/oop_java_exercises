@@ -8,5 +8,9 @@ public boolean isAsleep();
 
  public boolean wakeUp();
 
+ public String getSetting();
+
+
+
 
 }
