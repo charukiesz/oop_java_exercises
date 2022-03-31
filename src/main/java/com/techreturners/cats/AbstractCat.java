@@ -4,11 +4,14 @@ abstract class AbstractCat implements Cat {
 
 
 
-   public boolean isAsleep(){return false;}
+   public abstract boolean isAsleep();
 
+   public abstract boolean goToSleep();
 
-   public boolean goToSleep(){return false;}
+   public abstract boolean wakeUp();
 
-   public boolean wakeUp(){return true;}
+   public abstract int getAverageHeight();
+
+   public abstract String eat();
 
 }
