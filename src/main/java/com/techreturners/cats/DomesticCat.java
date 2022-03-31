@@ -11,6 +11,8 @@ public class DomesticCat extends AbstractCat {
 
     @Override
     public boolean goToSleep(){return false;}
-
+    @Override
     public String getSetting(){ return setting;}
+    @Override
+    public int getAverageHeight(){return 23;}
 }

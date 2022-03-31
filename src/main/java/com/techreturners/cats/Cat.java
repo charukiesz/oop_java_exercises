@@ -10,6 +10,8 @@ public boolean isAsleep();
 
  public String getSetting();
 
+ public int getAverageHeight();
+
 
 
 
