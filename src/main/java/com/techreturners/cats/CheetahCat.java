@@ -2,17 +2,18 @@ package com.techreturners.cats;
 
 public class CheetahCat extends Feline {
 
-    private String setting = "wild";
+    //constructor
+    public CheetahCat() {
+        setting = "wild";
+        AverageHeight = 94;
+    }
+
+//generic methods are inherited from superclass Feline
 
 
-
+//overridden methods specific to CheetahCat
+    @Override
     public String eat(){return "Zzzzzzz";}
-
-    @Override
-    public int getAverageHeight(){return 0;}
-
-    @Override
-    public String getSetting(){return setting;}
 
 
 }

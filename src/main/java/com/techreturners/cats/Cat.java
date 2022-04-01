@@ -14,8 +14,9 @@ interface Cat {
 
   String eat();
 
-  void run();
+  default void run() {
 
+  }
 
 
 }

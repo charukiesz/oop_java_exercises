@@ -2,15 +2,16 @@ package com.techreturners.cats;
 
 public class DomesticCat extends Feline {
 
-    private String setting = "domestic";
+//constructor
+public DomesticCat() {
+    setting = "domestic";
+    AverageHeight = 23;
+}
 
+// generic methods are inherited from superclass Feline
 
-    @Override
-    public String getSetting(){ return setting;}
-    @Override
-    public int getAverageHeight(){return 23;}
-
-    @Override
+//overridden  methods are specific to DomesticCat
+@Override
     public String eat(){return "Purrrrrrr";}
 
 

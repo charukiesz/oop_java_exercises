@@ -2,16 +2,15 @@ package com.techreturners.cats;
 
 public class LionCat extends Feline {
 
+    //constructor
+    public LionCat() {
+        setting = "wild";
+        AverageHeight = 1100;
+    }
 
-private String setting = "wild";
-private int AverageHeight = 1100;
+//generic methods are inherited from superclass Feline
 
-
-    @Override
-    public int getAverageHeight(){return AverageHeight;}
-
-    @Override
-    public String getSetting(){return setting;}
+//overridden methods specific to LionCat
     @Override
     public String eat(){return "Roar!!!!";}
 

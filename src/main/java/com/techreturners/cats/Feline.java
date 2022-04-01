@@ -2,9 +2,11 @@ package com.techreturners.cats;
 
 abstract class Feline implements Cat {
 
-//properties
-   private int AverageHeight;
-   private boolean isAsleep = false;
+//attributes
+
+   protected boolean asleep = false;
+   protected String setting = "";
+   protected int AverageHeight = 0;
 
 //abstract methods
    public abstract String eat();
@@ -12,13 +14,15 @@ abstract class Feline implements Cat {
 //generic methods to be inherited by all subclasses
    public int getAverageHeight(){return AverageHeight;}
 
+   public String getSetting(){return setting;}
+
    public boolean isAsleep(){
-      return isAsleep;
+      return asleep;
    }
 
-   public void goToSleep(){isAsleep = true;}
+   public void goToSleep(){asleep = true;}
 
-   public void wakeUp(){isAsleep = false;}
+   public void wakeUp(){asleep = false;}
 
    public void run(){}
 
