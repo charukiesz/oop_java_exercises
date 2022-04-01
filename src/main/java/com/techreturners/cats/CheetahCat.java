@@ -1,17 +1,11 @@
 package com.techreturners.cats;
 
-public class CheetahCat extends AbstractCat {
+public class CheetahCat extends Feline {
 
     private String setting = "wild";
 
-    @Override
-    public boolean isAsleep(){return false;}
-    @Override
-    public boolean goToSleep(){return false;}
 
-    @Override
-    public boolean wakeUp(){return true;}
-    @Override
+
     public String eat(){return "Zzzzzzz";}
 
     @Override

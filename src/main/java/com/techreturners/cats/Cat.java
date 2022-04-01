@@ -4,9 +4,9 @@ interface Cat {
 
   boolean isAsleep();
 
-  boolean goToSleep();
+  void goToSleep();
 
-  boolean wakeUp();
+  void wakeUp();
 
   String getSetting();
 
@@ -14,9 +14,7 @@ interface Cat {
 
   String eat();
 
-
-
-
+  void run();
 
 
 

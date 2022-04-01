@@ -1,20 +1,14 @@
 package com.techreturners.cats;
 
-public class LionCat extends AbstractCat{
+public class LionCat extends Feline {
 
 
 private String setting = "wild";
+private int AverageHeight = 1100;
+
 
     @Override
-    public boolean isAsleep(){return false;}
-
-    @Override
-    public boolean goToSleep(){return false;}
-
-    @Override
-    public boolean wakeUp(){return true;}
-    @Override
-    public int getAverageHeight(){return 1100;}
+    public int getAverageHeight(){return AverageHeight;}
 
     @Override
     public String getSetting(){return setting;}
